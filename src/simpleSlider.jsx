@@ -7,6 +7,7 @@ export class SimpleSlider extends React.Component {
   render() {
     var settings = {
       dots: true,
+      arrow: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
