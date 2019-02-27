@@ -7,9 +7,9 @@
   left: 3% !important;
   z-index: 1;
   background-color: blue;
-  &::before {
-    content: "a";
-  }
+}
+.slick-prev:before {
+  content: "a";
 }
 .slick-next {
   right: 3% !important;

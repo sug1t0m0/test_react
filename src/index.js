@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { SimpleSlider } from "./simpleSlider";
 
-import "./styles.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import "./styles.css";
 
 function App() {
   return (
