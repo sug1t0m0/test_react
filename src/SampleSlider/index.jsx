@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Outer } from "./element";
+import { NextButton, SlideOuter, Outer, PrevButton, Text } from "./element";
 
 export const SampleSlider = props => {
   const settings = {
@@ -13,13 +13,19 @@ export const SampleSlider = props => {
     speed: 200,
     touchThreshold: 100,
     centerMode: true,
-    centerPadding: "15px"
+    centerPadding: "20px",
+    prevArrow: <PrevButton>Previous</PrevButton>,
+    nextArrow: <NextButton>next</NextButton>
   };
   return (
-    <Slider {...settings}>
-      {props.slideContents.map((content, index) => {
-        return <Outer key={index}>紅茶の種類 {content}</Outer>;
-      })}
-    </Slider>
+    <div>
+      <SlideOuter>
+        <Slider {...settings}>
+          {props.slideContents.map((content, index) => {
+            return <Outer key={index}>紅茶の種類 {content}</Outer>;
+          })}
+        </Slider>
+      </SlideOuter>
+    </div>
   );
 };

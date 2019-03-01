@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { SampleSlider } from "./SampleSlider";
 
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import "./styles.css";
 
