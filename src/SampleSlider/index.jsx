@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
+import { Outer } from "./element";
 
 export const SampleSlider = props => {
   const settings = {
-    dots: true,
     infinite: true,
     vertical: true,
     verticalSwiping: true,
@@ -11,16 +11,14 @@ export const SampleSlider = props => {
     swipe: true,
     swipeToSlide: true,
     speed: 200,
-    touchThreshold: 100
+    touchThreshold: 100,
+    centerMode: true,
+    centerPadding: "15px"
   };
   return (
     <Slider {...settings}>
       {props.slideContents.map((content, index) => {
-        return (
-          <div key={index}>
-            <h3>{content}</h3>
-          </div>
-        );
+        return <Outer key={index}>紅茶の種類 {content}</Outer>;
       })}
     </Slider>
   );
