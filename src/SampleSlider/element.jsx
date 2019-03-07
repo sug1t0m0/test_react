@@ -28,6 +28,11 @@ export const PrevButton = styled.button`
   background: #d0a9f5;
   transform: rotate(90deg);
   z-index: 3;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   &::after {
     transform: translateX(-50%) translateX(-2px) translateY(-50%);
     border-width: 9px 12px 9px 0;
@@ -42,6 +47,9 @@ export const PrevButton = styled.button`
     height: 0;
     border-style: solid;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 export const NextButton = styled.button`
   position: absolute;
@@ -52,6 +60,11 @@ export const NextButton = styled.button`
   background: #d0a9f5;
   z-index: 4;
   transform: translateY(-35px) rotate(-90deg);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   &::after {
     transform: translateX(-50%) translateX(-2px) translateY(-50%);
     border-width: 9px 12px 9px 0;
@@ -65,5 +78,8 @@ export const NextButton = styled.button`
     width: 0;
     height: 0;
     border-style: solid;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;

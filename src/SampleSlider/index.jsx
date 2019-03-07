@@ -1,6 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import { NextButton, SlideOuter, Outer, PrevButton, Text } from "./element";
+import {
+  NextButton,
+  SlideOuter,
+  Outer,
+  PrevButton,
+  Text,
+  Button
+} from "./element";
 
 export const SampleSlider = props => {
   const settings = {
