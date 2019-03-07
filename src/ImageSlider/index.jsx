@@ -44,7 +44,7 @@ export class ImageSlider extends Component {
           <Slider ref={c => (this.slider = c)} {...settings}>
             {this.props.slideContents.map((content, index) => {
               return (
-                <ImgOuter>
+                <ImgOuter key={index}>
                   <Img src={"http://placehold.it/400x300"} />
                 </ImgOuter>
               );
