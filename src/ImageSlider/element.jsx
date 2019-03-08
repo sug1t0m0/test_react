@@ -5,7 +5,7 @@ export const ButtonsOuter = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 export const Buttons = styled.div`
