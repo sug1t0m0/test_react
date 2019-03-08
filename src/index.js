@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { SampleSlider } from "./SampleSlider";
 import { ImageSlider } from "./ImageSlider/index.jsx";
 import { Text } from "./atoms/Text/";
+import { Title } from "./atoms/Title/";
+import { ParagraphWithCenteredElements } from "./molecules/ParagraphWithCenteredElements/";
 
 import "slick-carousel/slick/slick.css";
 
@@ -14,12 +16,7 @@ function App() {
     <div className="App">
       <ImageSlider slideContents={slideContents} />
       <SampleSlider slideContents={slideContents} />
-      <Text> size指定なしTeeeeeet日本語も</Text>
-      <Text fontSize={24}>
-        {" "}
-        size24px Teeeeeet日本語もあああああああああああああああああああああああ
-      </Text>
-      <Text isBold={true}> size指定なし太字にもできるTeeeeeet日本語も</Text>
+      <ParagraphWithCenteredElements />
     </div>
   );
 }
