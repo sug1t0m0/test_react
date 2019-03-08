@@ -29,7 +29,11 @@ export const SampleSlider = props => {
       <SlideOuter>
         <Slider {...settings}>
           {props.slideContents.map((content, index) => {
-            return <Outer key={index}>紅茶の種類 {content}</Outer>;
+            return (
+              <Outer key={index}>
+                <Text>{"紅茶の種類 " + content}</Text>
+              </Outer>
+            );
           })}
         </Slider>
       </SlideOuter>

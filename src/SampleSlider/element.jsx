@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 export const Text = styled.p`
   height: 30px;
+  font-size: 28px;
+  padding: 0 0 10px 0;
+  margin: 0;
+  align-items: center;
   text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-seri;
 `;
 
 export const SlideOuter = styled.div`
   margin: auto;
   width: 100%;
-  font-size: 28px;
 `;
 
 export const Outer = styled.div`
