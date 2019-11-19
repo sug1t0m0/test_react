@@ -5,8 +5,12 @@ export const NavigationBar = props => {
   return (
     <div>
       <Link to="/">Home</Link>
-      {props.slugs.map(slug => {
-        return <Link to={`/${slug}`}>{slug}</Link>;
+      {props.slugs.map((slug, index) => {
+        return (
+          <Link key={index} to={`/${slug}`}>
+            {slug}
+          </Link>
+        );
       })}
     </div>
   );
